@@ -1,5 +1,5 @@
 import express from "express"
-import { json, urlencoded, Response, Request } from "express"
+import { json, urlencoded } from "express"
 import routes from "./routes/routes"
 import { mongoManipulator } from "./database/MongoConnection"
 
@@ -9,7 +9,7 @@ const app = express()
 app.use(json())
 app.use(routes)
 app.use(urlencoded({
-    extended: true
+    extended: true 
 }))
 
 try {
