@@ -1,0 +1,8 @@
+{
+    "ignore": [
+        ".gitingore",
+        "node_modules/**/node_modules"
+    ],
+    "exec": "ts-node server.ts",
+    "ext": "js, json, ts"
+}
