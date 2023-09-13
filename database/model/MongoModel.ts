@@ -4,8 +4,8 @@ const taskSchema = new Schema({
     taskName: String,
 })
 
-const userModel = model('task', taskSchema)
+const taskModel = model('task', taskSchema)
 
 export {
-    userModel
+    taskModel
 }

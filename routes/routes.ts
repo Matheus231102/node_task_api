@@ -9,5 +9,7 @@ const routes = Router()
 routes.get('/getalltasks',  BuscarController.allTasks)
 routes.post('/createtask', CreateController.task)
 routes.delete('/deletealltasks', DeleteController.all)
+routes.delete('/deletetask/:id', DeleteController.one)
+
 
 export default routes

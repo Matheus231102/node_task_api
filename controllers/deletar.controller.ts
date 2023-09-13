@@ -6,4 +6,12 @@ export default class DeleteController {
         MongoMethods.removeAllTasks()
         res.status(200).send('todas as tasks foram deletadas!')
     }
+
+    static one(req: Request, res: Response) {
+        const id = req.params.id
+        console.log(id)
+        MongoMethods.removeOneTask(id)
+        res.status(201).json('task foi excluida com sucesso!')
+    }
+
 }
