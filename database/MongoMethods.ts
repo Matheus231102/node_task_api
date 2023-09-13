@@ -38,4 +38,7 @@ export default class MongoMethods {
         }
     }
 
+    static async chancePropComplete(id: string) {
+    }
+
 }
